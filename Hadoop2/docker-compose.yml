@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  hadoop:
+    container_name: ${CONTAINER_NAME:-hadoop}
+    hostname: ${CONTAINER_NAME:-hadoop}
+    image: postgres:${PG_VERSION}
+    volumes:
+      - ./${DATA_FOLDER:-db}:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=${DB_PASS:-pgpass}
+      - POSTGRES_USER=${DB_USER:-pguser}
+      - POSTGRES_DB=${DB_NAME:-testdb}
+    networks:
+      - services
+    ports:
+      - 5432:5432
+# volumes:
+#   metadata_data: {}
+  
+networks: 
+  services:
+    name: ${APP_NAME}_network
