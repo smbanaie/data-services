@@ -13,14 +13,4 @@ services:
       MYSQL_DATABASE: nikamooz
     volumes:
       - ./data/mysql:/var/lib/mysql
-
-  postgres:
-    image: postgres:13.2-alpine
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: nikamooz
-    volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+  
