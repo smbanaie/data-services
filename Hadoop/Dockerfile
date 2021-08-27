@@ -11,8 +11,12 @@ COPY ssh_config /etc/ssh/ssh_config
 WORKDIR /home/hduser
 
 USER hduser
-RUN wget -q https://downloads.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz && tar zxvf hadoop-3.3.1.tar.gz && rm hadoop-3.3.1.tar.gz
+RUN wget -q https://downloads.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz && tar zxvf hadoop-3.3.1.tar.gz && rm hadoop-3.3.1.tar.gz 
+
+RUN rm -r hadoop-3.3.1/share/doc
+
 RUN ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa && cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && chmod 0600 ~/.ssh/authorized_keys
+
 
 ENV HDFS_NAMENODE_USER hduser
 ENV HDFS_DATANODE_USER hduser
