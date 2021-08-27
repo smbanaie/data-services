@@ -1,6 +1,7 @@
 *.tar.gz
 dags_saba/
-
+.env
+local_services/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

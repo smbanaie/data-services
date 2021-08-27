@@ -1,71 +1,22 @@
 version: '3.4'
 services:
-  nginx:
-    image: nginx:mainline-alpine
-    depends_on:
-      - mybb
-    logging:
-      driver: syslog
-      options:
-        tag: "{{.DaemonName}}(image={{.ImageName}};name={{.Name}};id={{.ID}})"
-    networks:
-      - frontend
-    ports:
-      - '8080:80'
-    restart: on-failure
+  postgres:
+    container_name: ${CONTAINER_NAME:-postgres}
+    hostname: ${CONTAINER_NAME:-postgres}
+    image: postgres:${PG_VERSION}
     volumes:
-      - ${PWD}/nginx:/etc/nginx/conf.d:ro
-      - ${PWD}/mybb:/var/www/html:ro
-
-  mybb:
-    build: php7.1/fpm
-    depends_on:
-      - memcached
-      - postgresql
-    logging:
-      driver: syslog
-      options:
-        tag: "{{.DaemonName}}(image={{.ImageName}};name={{.Name}};id={{.ID}})"
-    networks:
-      - frontend
-      - backend
-    restart: on-failure
-    volumes:
-      - ${PWD}/mybb:/var/www/html
-
-  postgresql:
-    image: postgres:10.1-alpine
+      - ./${DATA_FOLDER:-db}:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: mybb
-      POSTGRES_USER: mybb
-      POSTGRES_PASSWORD: changeme
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 30s
-      timeout: 30s
-      retries: 3
-    logging:
-      driver: syslog
-      options:
-        tag: "{{.DaemonName}}(image={{.ImageName}};name={{.Name}};id={{.ID}})"
+      - POSTGRES_PASSWORD=${DB_PASS:-pgpass}
+      - POSTGRES_USER=${DB_USER:-pguser}
+      - POSTGRES_DB=${DB_NAME:-testdb}
     networks:
-      - backend
-    restart: on-failure
-    volumes:
-      - ${PWD}/postgres/data:/var/lib/postgresql/data
-
-  memcached:
-    image: memcached:1.5.3-alpine
-    logging:
-      driver: syslog
-      options:
-        tag: "{{.DaemonName}}(image={{.ImageName}};name={{.Name}};id={{.ID}})"
-    networks:
-      - backend
-    restart: on-failure
-
-networks:
-  frontend:
-    driver: bridge
-  backend:
-    driver: bridge
+      - services
+    ports:
+      - 5432:5432
+# volumes:
+#   metadata_data: {}
+  
+networks: 
+  services:
+    name: ${APP_NAME}_network
