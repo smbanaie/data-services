@@ -13,9 +13,23 @@ services:
     networks:
       - services
     ports:
-      - 5432:5432
+      - ${PORT:-5432}:5432
 # volumes:
 #   metadata_data: {}
+  # pgadmin:
+  #   container_name: pgadmin4
+  #   hostname: pgadmin4
+  #   image: dpage/pgadmin4
+  #   restart: always
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: admin@admin.com
+  #     PGADMIN_DEFAULT_PASSWORD: saba123
+  #   volumes:
+  #     - ./pgadmin_erd:/erds
+  #   ports:
+  #     - "5050:80"
+  #   networks:
+  #     - services  
   
 networks: 
   services:

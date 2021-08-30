@@ -2,30 +2,30 @@
 
 all: restart logs
 
+clean:
+	@echo "===== Docker up ====="
+	docker rm -fv $(docker ps -aq -f "status=exited")
+
 up: .env
 	@echo "===== Docker up ====="
-	docker-compose up -d
+	docker-compose -f ./docker-compose.yml up -d
 
 down: .env
 	@echo "===== Docker down ====="
 	docker-compose down --remove-orphans
 
 downv: .env
-	@echo "===== Docker down ====="
+	@echo "===== Docker down -v  ====="
 	docker-compose down -v --remove-orphans
 
 
-clean: .env
-	@echo "===== Docker down ====="
-	docker rm -fv $(docker ps -aq -f "status=exited")
-
 start: .env
 	@echo "===== Docker start ====="
-	docker-compose up -d
+	docker-compose -f ./docker-compose.yml up -d 
 
 stop: .env
 	@echo "===== Docker stop ====="
-	docker-compose stop
+	docker-compose -f ./docker-compose.yml stop
 
 restart: .env
 	@echo "===== Docker restart ====="
@@ -42,11 +42,11 @@ logs: .env
 
 run: .env
 	@echo "===== Docker run container ====="
-	docker-compose run --rm broker bash
+	docker-compose run --rm postgres_lookups bash
 
 exec: .env
 	@echo "===== Docker exec container ====="
-	docker-compose exec broker bash
+	docker-compose exec airflow bash
 
 stats:
 	@echo "===== Docker stats ====="
@@ -54,4 +54,4 @@ stats:
 
 ps:
 	@echo "===== Print state of containers ====="
-	docker-compose ps 
+	docker-compose -f ./docker-compose.yml ps

@@ -2,21 +2,30 @@
 
 all: restart logs
 
+clean:
+	@echo "===== Docker up ====="
+	docker rm -fv $(docker ps -aq -f "status=exited")
+
 up: .env
 	@echo "===== Docker up ====="
-	docker-compose -f ./docker-compose-apache.yml up
+	docker-compose -f ./docker-compose.yml up -d
 
 down: .env
 	@echo "===== Docker down ====="
 	docker-compose down --remove-orphans
 
+downv: .env
+	@echo "===== Docker down -v  ====="
+	docker-compose down -v --remove-orphans
+
+
 start: .env
 	@echo "===== Docker start ====="
-	docker-compose -f ./docker-compose-apache.yml up -d 
+	docker-compose -f ./docker-compose.yml up -d 
 
 stop: .env
 	@echo "===== Docker stop ====="
-	docker-compose -f ./docker-compose-apache.yml stop
+	docker-compose -f ./docker-compose.yml stop
 
 restart: .env
 	@echo "===== Docker restart ====="

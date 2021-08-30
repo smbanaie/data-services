@@ -1,0 +1,1950 @@
+{
+    "data": [{
+            "name": "کف",
+            "english_name": "Kaf",
+            "short_name": "کف",
+            "english_short_name": "Kaf",
+            "trade_symbol": "شکف",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش موادپاک کننده،آرایشی،صابون،ادکلن\u200cولوازم\u200cبهداشتی",
+            "id": "1",
+            "meta": {
+                "version": 2279171888,
+                "state": "updated",
+                "insert_date_time": "13920126090324",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "شیمیایی پارس پامچال",
+            "english_name": "Pars Pamchal Chemical",
+            "short_name": "پارس پامچال",
+            "english_short_name": "Pars Pamchal Chemical",
+            "trade_symbol": "شپمچا",
+            "english_trade_symbol": "PPC",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "ت\u200d\u200cهیه\u200cوتولیدرنگ ورزینها\u200dی\u200cصنعتی\u200cوموادجوهر\u200dی\u200cوانجام\u200cمعاملات\u200cمربوطه",
+            "id": "2",
+            "meta": {
+                "version": 2279171889,
+                "state": "updated",
+                "insert_date_time": "13920126090824",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "فرآورده های غذایی دشت مرغاب",
+            "english_name": "Dashte Morghab Vegetable Oil",
+            "short_name": "دشت مرغاب",
+            "english_short_name": "Dashte Morghab Vegetable Oil",
+            "trade_symbol": "غدشت",
+            "english_trade_symbol": "DMO",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "03/31",
+            "description": "کشت وصنعت وبسته بند\u200dی مواد غذایی",
+            "id": "3",
+            "meta": {
+                "version": 10355480670,
+                "state": "updated",
+                "insert_date_time": "13920126093021",
+                "update_date_time": "14000310104720",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "صنایع شیمیایی رنگین",
+            "english_name": "Rangin Chemical Industrial",
+            "short_name": "رنگین",
+            "english_short_name": "Rangin",
+            "trade_symbol": "شرنگی",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولید رنگهای تزئینی ، صنعتی، پودری و اتومبیلی و انجام فعالیتهای آزمایشگاهی در رابطه با موضوع اصلی اساسنامه",
+            "id": "4",
+            "meta": {
+                "version": 2279171891,
+                "state": "updated",
+                "insert_date_time": "13920126090816",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "بین المللی محصولات پارس (سهامی عام)",
+            "english_name": "Pars Products",
+            "short_name": "بین المللی محصولات پارس",
+            "english_short_name": "Pars Products",
+            "trade_symbol": "شپارس",
+            "english_trade_symbol": "PAP",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "06/31",
+            "description": "کلیه معاملات مربوط به اجناس شخصی، خانگی، صنعتی و اداری در حوزه محصولات شیمیایی، پاک کننده، شوینده، بهداشتی، آرایشی، سلولزی، مواد و محصولات غذایی و صنایع وابسته",
+            "id": "5",
+            "meta": {
+                "version": 2279171907,
+                "state": "updated",
+                "insert_date_time": "13920126090257",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "گروه سرمایه گذاری سایپا",
+            "english_name": "Saipa Investment",
+            "short_name": "سر. سایپا",
+            "english_short_name": "Saipa Investment",
+            "trade_symbol": "وساپا",
+            "english_trade_symbol": "TIR",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "ساخت وفروش انواع رنگ،استر\u200dی،بتونه،تینر،رنگبر",
+            "id": "6",
+            "meta": {
+                "version": 2279171908,
+                "state": "updated",
+                "insert_date_time": "13920126090833",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "تولیدی سوپر رنگ",
+            "english_name": "Super Paint",
+            "short_name": "سوپر رنگ",
+            "english_short_name": "Super Paint",
+            "trade_symbol": "شسپهر",
+            "english_trade_symbol": "SRP",
+            "state": {
+                "title": "حذف نام شرکت از فهرست نرخهای بورس",
+                "id": "8",
+                "meta": {
+                    "version": 397821317,
+                    "state": "inserted",
+                    "insert_date_time": "13910406165111",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوتوزیع\u200cانواع رنگها\u200dی صنعتی وساختمانی",
+            "id": "7",
+            "meta": {
+                "version": 2279171909,
+                "state": "updated",
+                "insert_date_time": "13930409111553",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "پاکسان",
+            "english_name": "Paksan",
+            "short_name": "پاکسان",
+            "english_short_name": "Paksan",
+            "trade_symbol": "شپاکسا",
+            "english_trade_symbol": "PAK",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "تهیه و تولید انواع مواد شوینده و پاک کننده،محصولات بهداشتی وآرایشی،کارهای تولیدی وبازرگانی،صادرات،واردات,تولید و فروش نیروی برق توسط مولد مقیاس کوچک،انجام خدمان فنی وآزمایشگاهی،سرمایه گذاری و انجام هرنوع عملیات مرتبط با موضوع شرکت",
+            "id": "8",
+            "meta": {
+                "version": 2279171910,
+                "state": "updated",
+                "insert_date_time": "13921201144139",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروسازی زاگرس فارمد پارس",
+            "english_name": "Zagros Farmad Pars",
+            "short_name": "زاگرس فارمد پارس",
+            "english_short_name": "Zagros Farmad Pars",
+            "trade_symbol": "ددام",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "انجام\u200cاموربازرگانی\u200cواخذنمایندگی\u200cازشرکتها،فروش\u200cوتوزیع\u200cمواددارویی",
+            "id": "9",
+            "meta": {
+                "version": 2279171911,
+                "state": "updated",
+                "insert_date_time": "13920126090637",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "شیرین دارو",
+            "english_name": "Shirindaru Pharmaceutical",
+            "short_name": "شیرین دارو",
+            "english_short_name": "Shirindaru Pharmaceutical",
+            "trade_symbol": "دشیری",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوتوزیع\u200cفراورده\u200cها\u200dی\u200cگیاه\u200cشیرین\u200cبیان\u200cوسایرگیاهان\u200cداروئی و کلیه عملیات و معاملات داخلی و خارجی تجاری و صنعتی و مالی که به هر نحوی با موضوع شرکت مرتبط باشد به انضمام انجام آزمونهای شیرین بیان و گیاهان دارویی و فرآورده های آنها",
+            "id": "10",
+            "meta": {
+                "version": 2279171912,
+                "state": "updated",
+                "insert_date_time": "13930419170155",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "دارو جابرابن حیان",
+            "english_name": "Jaber Ebne Hayan Pharmaceutical",
+            "short_name": "دارو جابرابن حیان",
+            "english_short_name": "Jaber Ebne Hayan Pharmaceutical",
+            "trade_symbol": "دجابر",
+            "english_trade_symbol": "JEH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدقرص وکپسول ،ویال ،شربت ،شربت خشک ،قطره ،پمادوکرم",
+            "id": "11",
+            "meta": {
+                "version": 2279171913,
+                "state": "updated",
+                "insert_date_time": "13920126090801",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "دارو ابوریحان",
+            "english_name": "Abureihan Pharmaceutical",
+            "short_name": "دارو ابوریحان",
+            "english_short_name": "Abureihan Pharmaceutical",
+            "trade_symbol": "دابور",
+            "english_trade_symbol": "APH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدانواع دارو، توزیع و فروش محصولات، خرید و فروش ملزومات تولید و خدمات مرتبط، تولید و فروش ملزومات دارویی، انجام خدمات آزمایشگاهی،بهره برداری از کارخانه ها،خرید و فروش داراییها،خرید و فروش سهام، فعالیتهای تحقیقاتی، اخذ نمایندگی مرتبط ",
+            "id": "12",
+            "meta": {
+                "version": 2279171914,
+                "state": "updated",
+                "insert_date_time": "13920126090751",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "لابراتوارهای دارویی رازک",
+            "english_name": "Razak Laboratories",
+            "short_name": "دارو رازک",
+            "english_short_name": "Razak Laboratories",
+            "trade_symbol": "درازک",
+            "english_trade_symbol": "RLA",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولید داروها\u200dی \u200cانسانی\u200c و دامی،انواع \u200cکپسول،قرص،شربت،پماد و آمپول",
+            "id": "13",
+            "meta": {
+                "version": 2279171915,
+                "state": "updated",
+                "insert_date_time": "13920126090734",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "صنعتی کیمیدارو",
+            "english_name": "Kimidaru Pharmaceutical",
+            "short_name": "کیمیدارو",
+            "english_short_name": "Kimidaru Pharmaceutical",
+            "trade_symbol": "دکیمی",
+            "english_trade_symbol": "KIM",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدانواع دارووموادشیمیایی",
+            "id": "14",
+            "meta": {
+                "version": 2279171916,
+                "state": "updated",
+                "insert_date_time": "13920126090742",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "دارو حکیم",
+            "english_name": "Hakim Pharmaceutical",
+            "short_name": "دارو حکیم",
+            "english_short_name": "Hakim Pharmaceutical",
+            "trade_symbol": "دحکیم",
+            "english_trade_symbol": "HPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "تولیدوفروش انواع موادداروئی وشیمیائی",
+            "id": "15",
+            "meta": {
+                "version": 2279171917,
+                "state": "updated",
+                "insert_date_time": "13920126090714",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروسازی لقمان",
+            "english_name": "Loghman Pharmaceutical",
+            "short_name": "دارو لقمان",
+            "english_short_name": "Loghman Pharmaceutical",
+            "trade_symbol": "دلقما",
+            "english_trade_symbol": "LPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "ایجادوتاسیس کارخانجات ولابراتورهایی به منظور تهیه وتولیدمواداولیه دارویی ساخت وبسته بندی انواع محصولات  داروئی_شیمیایی_لوازم درمانی_بهداشتی_آرایشی_آزمایشگاهی_عطریات_دامی_انواع مواد پاک کننده _موادکشنده حشرات",
+            "id": "16",
+            "meta": {
+                "version": 2279171918,
+                "state": "updated",
+                "insert_date_time": "13920126090724",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "دارویی اسوه",
+            "english_name": "Osveh Pharmaceutical",
+            "short_name": "دارو اسوه",
+            "english_short_name": "Osveh Pharmaceutical",
+            "trade_symbol": "داسوه",
+            "english_trade_symbol": "OPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدمحصولات داروئی ،ارایشی ،شیمیایی ودامپزشکی",
+            "id": "17",
+            "meta": {
+                "version": 2279171919,
+                "state": "updated",
+                "insert_date_time": "13920126090705",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروپخش",
+            "english_name": "Darupakhsh",
+            "short_name": "داروپخش",
+            "english_short_name": "Darupakhsh",
+            "trade_symbol": "وپخش",
+            "english_trade_symbol": "DPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "واردات ، تولیدوفروش انواع محصولات دارویی وشیمیایی",
+            "id": "18",
+            "meta": {
+                "version": 2279171920,
+                "state": "updated",
+                "insert_date_time": "13920126090657",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروسازی کوثر",
+            "english_name": "Kowsar Pharmaceutical",
+            "short_name": "داروسازی کوثر",
+            "english_short_name": "Kowsar Pharmaceutical",
+            "trade_symbol": "دکوثر",
+            "english_trade_symbol": "KPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولید آنتی بیوتیکهای انسانی و تولید و واردات مکمل های غذایی و غذاهای ویژه",
+            "id": "19",
+            "meta": {
+                "version": 2279171921,
+                "state": "updated",
+                "insert_date_time": "13921129122854",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "لابراتوارهای سینادارو",
+            "english_name": "Sinadaru Pharmaceutical",
+            "short_name": "سینادارو",
+            "english_short_name": "Sinadaru Pharmaceutical",
+            "trade_symbol": "دسینا",
+            "english_trade_symbol": "SPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "ساخت و توزیع و فوش کلیه مواد و محصولات شیمیایی دارویی؛ بهداشتی؛ ظروف و قطعات و لوازم بسته بندی دارویی و بهداشتی و غیره. انجام کلیه امور بازرگانی و اخذ نمایندگی از شرکتها و موسسات داخلی و خارجی. واردات و صادرات ئو فروش و توزیع مواد و محصولات دارویی",
+            "id": "20",
+            "meta": {
+                "version": 2279171922,
+                "state": "updated",
+                "insert_date_time": "13920126090514",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروسازی فارابی",
+            "english_name": "Farabi Pharmaceutical",
+            "short_name": "دارو فارابی",
+            "english_short_name": "Farabi Pharmaceutical",
+            "trade_symbol": "دفارا",
+            "english_trade_symbol": "FPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش\u200cانواع\u200cکپسول\u200cومحلول(شربت)وتولیدانتی\u200cبیوتیک",
+            "id": "21",
+            "meta": {
+                "version": 2279171923,
+                "state": "updated",
+                "insert_date_time": "13920126090531",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروسازی امین",
+            "english_name": "Amin Pharmaceutical",
+            "short_name": "دارو امین",
+            "english_short_name": "Amin Pharmaceutical",
+            "trade_symbol": "دامین",
+            "english_trade_symbol": "AMP",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش انواع قرص ، کپسول ، شربت ودراژهوانجام فعالیت فرهنگی _تبلیغاتی_به وسیله رسانه ها و چاپ و انتشار در نشریات .بروشور وکالای فرهنگی وامثالهم",
+            "id": "22",
+            "meta": {
+                "version": 2279171924,
+                "state": "updated",
+                "insert_date_time": "13920126090523",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "داروسازی تهران شیمی",
+            "english_name": "Tehran Chemical",
+            "short_name": "تهران شیمی",
+            "english_short_name": "Tehran Chemical",
+            "trade_symbol": "شتهران",
+            "english_trade_symbol": "TCH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "تهیه وساخت محصولات بهداشتی ،داروئی وشیمیائی",
+            "id": "23",
+            "meta": {
+                "version": 2279171925,
+                "state": "updated",
+                "insert_date_time": "13920126090628",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "پارس دارو",
+            "english_name": "Parsdaru Pharmaceutical",
+            "short_name": "پارس دارو",
+            "english_short_name": "Parsdaru Pharmaceutical",
+            "trade_symbol": "دپارس",
+            "english_trade_symbol": "PPH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "ساخت \u200cوفروش\u200c داروها\u200dی \u200cشیمیائی \u200cو گیاهی \u200cو مواداولیه \u200cدارویی،شیمیائی\r\nتولید و فروش و واردات ملزومات دارویی\r\n",
+            "id": "24",
+            "meta": {
+                "version": 2279171926,
+                "state": "updated",
+                "insert_date_time": "13920126090612",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "مواد اولیه الیاف مصنوعی",
+            "english_name": "Alyaf",
+            "short_name": "مواد اولیه الیاف مصنوعی",
+            "english_short_name": "Alyaf",
+            "trade_symbol": "شلیاف",
+            "english_trade_symbol": "ALI",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تاسیس کارخانه\u200c برای ساخت\u200c انواع\u200c نخهای مصنوعی\u200c و محصولات\u200c مرتبط و فروش\u200c آنها",
+            "id": "25",
+            "meta": {
+                "version": 2279171927,
+                "state": "updated",
+                "insert_date_time": "13920126090135",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "ساسان",
+            "english_name": "Sasan",
+            "short_name": "ساسان",
+            "english_short_name": "Sasan",
+            "trade_symbol": "غساسا",
+            "english_trade_symbol": "SAS",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "06/31",
+            "description": "تولید نوشابه،تشتک وجعبه پلاستیکی",
+            "id": "26",
+            "meta": {
+                "version": 2279171928,
+                "state": "updated",
+                "insert_date_time": "13920126092056",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "بیسکویت گرجی",
+            "english_name": "Gorji Biscuit",
+            "short_name": "بیسکویت گرجی",
+            "english_short_name": "Gorji Biscuit",
+            "trade_symbol": "غگرجی",
+            "english_trade_symbol": "GBI",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدانواع بیسکویت وشیرینی",
+            "id": "27",
+            "meta": {
+                "version": 2279171929,
+                "state": "updated",
+                "insert_date_time": "13920126092802",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "صنعتی پارس مینو",
+            "english_name": "Pars Minoo",
+            "short_name": "پارس مینو",
+            "english_short_name": "Pars Minoo",
+            "trade_symbol": "غپینو",
+            "english_trade_symbol": "PMI",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدمحصولات غذایی،دارویی،بهداشتی،ارایشی، فعالیتهای آزمایشگاهی",
+            "id": "28",
+            "meta": {
+                "version": 2279171930,
+                "state": "updated",
+                "insert_date_time": "13920126092144",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "شهد ایران",
+            "english_name": "Shahd Iran Sugar",
+            "short_name": "شهد ایران",
+            "english_short_name": "Shahd Iran Sugar",
+            "trade_symbol": "غشهد",
+            "english_trade_symbol": "SIR",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "احداث نیروگاه CHP جهت تولید توأم گرما و برق برای رفع نیاز انرژی های مورد مصرف شرکت، ایجاد سردخانه صنعتی، ایجاد گلخانه صنعتی و فروش مازاد برق تولیدی در صورت وجود به وزارت نیرو.",
+            "id": "29",
+            "meta": {
+                "version": 2279171931,
+                "state": "updated",
+                "insert_date_time": "13920126093036",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "مارگارین",
+            "english_name": "Margarin",
+            "short_name": "مارگارین",
+            "english_short_name": "Margarin",
+            "trade_symbol": "غمارگ",
+            "english_trade_symbol": "MAR",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "تولیدروغن نباتی ومحصولات فرعی",
+            "id": "30",
+            "meta": {
+                "version": 2279171932,
+                "state": "updated",
+                "insert_date_time": "13920126092940",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "لبنیات پاستوریزه پاک",
+            "english_name": "Pak Dairy",
+            "short_name": "لبنیات پاک",
+            "english_short_name": "Pak Dairy",
+            "trade_symbol": "غپاک",
+            "english_trade_symbol": "PAM",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "ایجادوصنایع\u200cلبنی،تهیه\u200cغذا\u200dی\u200cطفل\u200cوبزرگسال\u200cوامورمالی\u200cدرزمینه\u200cلبنیات",
+            "id": "31",
+            "meta": {
+                "version": 2279171933,
+                "state": "updated",
+                "insert_date_time": "13920126092854",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "مجتمع کشت و صنعت چین چین",
+            "english_name": "Chin Chin",
+            "short_name": "کشت و صنعت چین چین",
+            "english_short_name": "Chin Chin",
+            "trade_symbol": "غچین",
+            "english_trade_symbol": "CCA",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "03/31",
+            "description": "تولیدرب گوجه\u200cفرنگی،سس،کمپوت،مرباواب میوه",
+            "id": "32",
+            "meta": {
+                "version": 2279171934,
+                "state": "updated",
+                "insert_date_time": "13920126092129",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "روغن نباتی پارس",
+            "english_name": "Pars Vegetable Oil",
+            "short_name": "روغن نباتی پارس",
+            "english_short_name": "Pars Vegetable Oil",
+            "trade_symbol": "غپارس",
+            "english_trade_symbol": "PVO",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدروتوزیع\u200cروغن،قوطیی ،حلب فلز\u200dی وصابون",
+            "id": "33",
+            "meta": {
+                "version": 2279171935,
+                "state": "updated",
+                "insert_date_time": "13920126092949",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "روغن نباتی ناب",
+            "english_name": "Nab Vegetable Oil",
+            "short_name": "ناب",
+            "english_short_name": "Nab Vegetable Oil",
+            "trade_symbol": "غناب",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تاسیس وخریدکارخانه\u200cنشاسته\u200cوگلوکزومحصولات فرعی\u200cوتولیدوفروش آنها",
+            "id": "34",
+            "meta": {
+                "version": 2279171936,
+                "state": "updated",
+                "insert_date_time": "13920126092919",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "غذایی مشهد",
+            "english_name": "Mashad Agro Industries",
+            "short_name": "غذایی مشهد",
+            "english_short_name": "Mashad Agro Industries",
+            "trade_symbol": "غمشهد",
+            "english_trade_symbol": "MAI",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوبسسته\u200cبند\u200dی\u200cکمپوت،کنسرو،مرباجات،ابمیوه،رب گوجه\u200cفرنگی",
+            "id": "35",
+            "meta": {
+                "version": 2279171937,
+                "state": "updated",
+                "insert_date_time": "13920126092121",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "پیچک",
+            "english_name": "Pichak",
+            "short_name": "پیچک",
+            "english_short_name": "Pichak",
+            "trade_symbol": "غپیچک",
+            "english_trade_symbol": "PIC",
+            "state": {
+                "title": "حذف نام شرکت از فهرست نرخهای بورس",
+                "id": "8",
+                "meta": {
+                    "version": 397821317,
+                    "state": "inserted",
+                    "insert_date_time": "13910406165111",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدموادغذائی،عملیات\u200cدامدار\u200dی،کشاورز\u200dی\u200cوباغدار\u200dی،ساخت\u200cکنسرو",
+            "id": "36",
+            "meta": {
+                "version": 2279171938,
+                "state": "updated",
+                "insert_date_time": "13930409111553",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "خوراک دام پارس",
+            "english_name": "Pars Animal Food",
+            "short_name": "خوراک دام پارس",
+            "english_short_name": "Pars Animal Food",
+            "trade_symbol": "غدام",
+            "english_trade_symbol": "PAF",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "تهیه وتوزیع خوراک دام وطیور،گوشت و تخم مرغ",
+            "id": "37",
+            "meta": {
+                "version": 2279171939,
+                "state": "updated",
+                "insert_date_time": "13920126092812",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "ویتانا",
+            "english_name": "Vitana",
+            "short_name": "ویتانا",
+            "english_short_name": "Vitana",
+            "trade_symbol": "غویتا",
+            "english_trade_symbol": "VITP1",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش انواع موادغذائی",
+            "id": "38",
+            "meta": {
+                "version": 2279171940,
+                "state": "updated",
+                "insert_date_time": "13930409111553",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "صنعتی بهشهر",
+            "english_name": "Behshahr Industrial",
+            "short_name": "صنعتی بهشهر",
+            "english_short_name": "Behshahr Industrial",
+            "trade_symbol": "غبشهر",
+            "english_trade_symbol": "BIN",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "پنبه\u200cپاک\u200cکنی.روغن\u200cکشی.تصفیه\u200cوتولیدروغن",
+            "id": "39",
+            "meta": {
+                "version": 2279171941,
+                "state": "updated",
+                "insert_date_time": "13920126092934",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "صنعتی بهپاک",
+            "english_name": "Behpak",
+            "short_name": "صنعتی بهپاک",
+            "english_short_name": "Behpak",
+            "trade_symbol": "بهپاک",
+            "english_trade_symbol": "BEH",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "09/30",
+            "description": "پنپه پاک کنی ،روغن کشی ،تولیدپروتئین گیاهی",
+            "id": "40",
+            "meta": {
+                "version": 2279171942,
+                "state": "updated",
+                "insert_date_time": "13930127093126",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "صنعتی مینو (خرمدره)",
+            "english_name": "Minoo Khoramdare Industries",
+            "short_name": "صنعتی مینو (خرمدره)",
+            "english_short_name": "Minoo Khoramdare Industries",
+            "trade_symbol": "غصینو",
+            "english_trade_symbol": "MINZ1",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش انواع\u200cبیسکویت کیک،اب نبات و تافی، انجام آزمون در دامنه فعالیت اصلی شرکت، واردات مواد اولیه و ماشین آلات، انجام معاملات مالی و تجاری، مشارکت در سایر شرکتها",
+            "id": "41",
+            "meta": {
+                "version": 8309578113,
+                "state": "updated",
+                "insert_date_time": "13920124161956",
+                "update_date_time": "13990714090534",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "نوش مازندران",
+            "english_name": "Noosh Mazandaran Beverages",
+            "short_name": "نوش مازندران",
+            "english_short_name": "Noosh Mazandaran Beverages",
+            "trade_symbol": "غنوش",
+            "english_trade_symbol": "MBE",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش اب میوه\u200cوکنستانتره",
+            "id": "42",
+            "meta": {
+                "version": 2279171944,
+                "state": "updated",
+                "insert_date_time": "13920126093028",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند بیستون",
+            "english_name": "Bistoon Sugar",
+            "short_name": "قند بیستون",
+            "english_short_name": "Bistoon Sugar",
+            "trade_symbol": "قیستو",
+            "english_trade_symbol": "BSU",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "06/31",
+            "description": "اداره\u200cکردن کارخانه\u200cقندوانجام کلیه\u200cامورتولید\u200dی مربوط به قندساز\u200dی",
+            "id": "43",
+            "meta": {
+                "version": 2279171945,
+                "state": "updated",
+                "insert_date_time": "13930728134022",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند ثابت خراسان",
+            "english_name": "Sabet Khorasan Sugar",
+            "short_name": "قند ثابت خراسان",
+            "english_short_name": "Sabet Khorasan Sugar",
+            "trade_symbol": "قثابت",
+            "english_trade_symbol": "SKI",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "04/31",
+            "description": "تولیدوفروش قندوشکروتفاله خشک",
+            "id": "44",
+            "meta": {
+                "version": 2279171946,
+                "state": "updated",
+                "insert_date_time": "13920126092707",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند مرودشت",
+            "english_name": "Marvdasht Sugar",
+            "short_name": "قند مرودشت",
+            "english_short_name": "Marvdasht Sugar",
+            "trade_symbol": "قمرو",
+            "english_trade_symbol": "MSU",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "04/31",
+            "description": "تاسیس کارخانه های تولیدی و صنعتی درجهت تولیدقندوشکروتهیه موادوعلوفه ازتفاله وملاس وچغندر وعملیات تجاری وکشاورزی ودامپروری ومشارکت بااشخاص حقیقی وحقوقی وخریدوفروش اوراق بهاداروانجام فعالیتهای تحقیقاتی ومطالعاتی وآزمایشگاهی",
+            "id": "45",
+            "meta": {
+                "version": 2279171947,
+                "state": "updated",
+                "insert_date_time": "13930826123059",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند قهستان",
+            "english_name": "Ghahestan Sugar",
+            "short_name": "قند قهستان",
+            "english_short_name": "Ghahestan Sugar",
+            "trade_symbol": "قستان",
+            "english_trade_symbol": "GSU",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "06/31",
+            "description": "تولیدشکر،تفاله وملاس ازچغندرقند",
+            "id": "46",
+            "meta": {
+                "version": 2279171948,
+                "state": "updated",
+                "insert_date_time": "13920126092538",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند نیشابور",
+            "english_name": "Neishabur Sugar",
+            "short_name": "قند نیشابور",
+            "english_short_name": "Neishabur Sugar",
+            "trade_symbol": "قنیشا",
+            "english_trade_symbol": "NSU",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "06/31",
+            "description": "تولیدشکروتفاله خشک",
+            "id": "47",
+            "meta": {
+                "version": 2279171949,
+                "state": "updated",
+                "insert_date_time": "13920126092730",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند شیرین خراسان",
+            "english_name": "Shirin Khorasan",
+            "short_name": "قند شیرین خراسان",
+            "english_short_name": "Shirin Khorasan",
+            "trade_symbol": "قشرین",
+            "english_trade_symbol": "SKS",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "06/31",
+            "description": "استفاده\u200c از کارخانه\u200cها\u200dی \u200cشکر و قنداز چغندر و تصفیه\u200c شکرخام\u200c ودیگر محصولات",
+            "id": "48",
+            "meta": {
+                "version": 2279171950,
+                "state": "updated",
+                "insert_date_time": "13920126092715",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند نقش جهان",
+            "english_name": "Naghshe Jahan Sugar",
+            "short_name": "قند نقش جهان",
+            "english_short_name": "Naghshe Jahan Sugar",
+            "trade_symbol": "قنقش",
+            "english_trade_symbol": "NJS",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "OTC",
+                "title": "فرابورس",
+                "english_title": "OTC",
+                "id": "2",
+                "meta": {
+                    "version": 397836454,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161233",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "12/29",
+            "description": "تولیدوفروش شکرومحصولات قند\u200dی",
+            "id": "49",
+            "meta": {
+                "version": 2279171951,
+                "state": "updated",
+                "insert_date_time": "13920126092700",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        },
+        {
+            "name": "قند لرستان",
+            "english_name": "Lorestan Sugar",
+            "short_name": "قند لرستان",
+            "english_short_name": "Lorestan Sugar",
+            "trade_symbol": "قلرست",
+            "english_trade_symbol": "LSU",
+            "state": {
+                "title": "پذیرفته شده",
+                "id": "1",
+                "meta": {
+                    "version": 2466580,
+                    "state": "inserted",
+                    "type": "stock.company_state"
+                }
+            },
+            "exchange": {
+                "code": "TSE",
+                "title": "بورس تهران",
+                "english_title": "TSE",
+                "id": "1",
+                "meta": {
+                    "version": 397836453,
+                    "state": "inserted",
+                    "insert_date_time": "13910406161231",
+                    "type": "exchange.exchange"
+                }
+            },
+            "fiscalyear": "04/31",
+            "description": "تولیدشکرومتفرعات مربوط به\u200cان",
+            "id": "50",
+            "meta": {
+                "version": 2279171952,
+                "state": "updated",
+                "insert_date_time": "13920126092644",
+                "update_date_time": "13971219121953",
+                "type": "stock.company"
+            }
+        }
+    ]
+}

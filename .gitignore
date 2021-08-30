@@ -2,6 +2,7 @@
 dags_saba/
 .env
 Local_Services/
+db_sabatamin/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
