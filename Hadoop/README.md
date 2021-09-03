@@ -12,7 +12,7 @@ Following this steps you can build and use the image to create a Hadoop Single N
 
 To run and create a container execute the next command:
 
-     $ docker run -it --name <container-name> -p 9864:9864 -p 9870:9870 -p 8088:8088 --hostname <your-hostname> hadoop
+     $ docker run --rm -it --name <container-name> -p 9864:9864 -p 9870:9870 -p 8088:8088 --hostname <your-hostname> hadoop
 
 Change **container-name** by your favorite name and set **your-hostname** with by your ip or name machine. You can use **localhost** as your-hostname
 

@@ -10,10 +10,12 @@ COPY ssh_config /etc/ssh/ssh_config
 
 WORKDIR /home/hduser
 
-USER hduser
-RUN wget -q https://downloads.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz && tar zxvf hadoop-3.3.1.tar.gz && rm hadoop-3.3.1.tar.gz 
+ENV HADOOP_VERSION 3.3.1
 
-RUN rm -r hadoop-3.3.1/share/doc
+USER hduser
+RUN wget https://downloads.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz && tar zxvf hadoop-${HADOOP_VERSION}.tar.gz && rm hadoop-${HADOOP_VERSION}.tar.gz 
+
+RUN rm -r hadoop-${HADOOP_VERSION}/share/doc
 
 RUN ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa && cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && chmod 0600 ~/.ssh/authorized_keys
 
@@ -25,7 +27,7 @@ ENV HDFS_SECONDARYNAMENODE_USER hduser
 ENV YARN_RESOURCEMANAGER_USER hduser
 ENV YARN_NODEMANAGER_USER hduser
 
-ENV HADOOP_HOME /home/hduser/hadoop-3.3.1
+ENV HADOOP_HOME /home/hduser/hadoop-${HADOOP_VERSION}
 
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
@@ -42,4 +44,8 @@ ENV PATH $PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 EXPOSE 50070 50075 50010 50020 50090 8020 9000 9864 9870 10020 19888 8088 8030 8031 8032 8033 8040 8042 22
 
-ENTRYPOINT ["/home/hduser/hadoop-3.3.1/etc/hadoop/docker-entrypoint.sh"]
+ENV DFS_DIR /home/hduser/dfs/data
+
+RUN mkdir -p ${DFS_DIR}
+
+ENTRYPOINT /home/hduser/hadoop-${HADOOP_VERSION}/etc/hadoop/docker-entrypoint.sh
