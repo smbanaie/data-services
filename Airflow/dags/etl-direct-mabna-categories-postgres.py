@@ -11,6 +11,8 @@ from confluent_kafka.avro import AvroProducer, CachedSchemaRegistryClient
 import elasticapm
 from confluent_kafka import avro
 import requests
+from airflow.providers.postgres.hooks.postgres import PostgresHook
+
 from utility import KafkaSchemaNotFound
 
 from airflow import DAG
@@ -27,16 +29,15 @@ from airflow.utils.log.logging_mixin import LoggingMixin
 
 ##----------------------------- Functions -----------------------------------
 
-def get_companies(**kwargs): 
+def get_inst_groups(**kwargs): 
     logger = LoggingMixin().log
-
     clientAPM = elasticapm.Client(service_name='ETL-Basics', service_version="1.0",
                                   server_url=Variable.get("APM-Server"))
     try : 
         conn = Variable.get("URL-API-Mabna")
         logger.info("^-"*25)
         logger.info(f"Connection Base URL : {conn}")
-        endpoint=f'/{Variable.get("Mabna-Companies-Endpoint")}'
+        endpoint=f'/{Variable.get("Mabna-Categories-Endpoint")}'
         logger.info(f"Endpoint : {endpoint}")
         headers = {
             'Authorization': f'Basic {Variable.get("Mabna-Basic-Token")}',
@@ -49,7 +50,7 @@ def get_companies(**kwargs):
         API_URL= f"{conn}{endpoint}"
         logger.info(f"Mabna URL in Request :{API_URL}")
         while flag :
-            payload = {'_count': f'{count}', '_skip': f'{skip}', '_expand':'state,exchange'}
+            payload = {'_count': f'{count}', '_skip': f'{skip}'}
             r = requests.get(API_URL, params=payload, headers=headers)
             if r.status_code == 200:
                 logger.info("^--"*20)
@@ -79,91 +80,76 @@ def delivery_report(err, msg):
 
 
 
-def produce_companies(**kwargs):
+def save_2_pg(**kwargs):
     logger = LoggingMixin().log
 
     clientAPM = elasticapm.Client(service_name='ETL-Basics', service_version="1.0",
                                   server_url=Variable.get("APM-Server"))
     logger.info("*-"*25)
-    key_schema_str = '''
-    {"namespace": "saba.references.basics.company",
-    "name": "key",
-    "type": "record",
-    "fields" : [
-        {
-        "name" : "id",
-        "type" : "string"
-        }
-    ]}'''
-     
-    logger.info (f"Key Schema Config : {key_schema_str} ")
-    key_schema = avro.loads(key_schema_str)
-    logger.info("*&"*25)
-    TOPIC= Variable.get("Topic-Companies")
-    logger.info(f"Topic : {TOPIC}")
-    SUBJECT= Variable.get("Schema-Subject-Companies").strip()
-    logger.info("-@-"*25)
-    logger.info(f"Schema of Companies Data: {SUBJECT}")
-    BOOTSTRAP_SERVERS=Variable.get("Bootstrap-Servers")
-    logger.info("-&-"*25)
-    logger.info(f"Kafka Brokers : {BOOTSTRAP_SERVERS}")
-    SCHEMA_REGISTRY_URL=Variable.get("Schema-Registry")
-    logger.info("-^-"*25)
-    logger.info(f"Schema Registry URL : {SCHEMA_REGISTRY_URL}")
     errors=0
     try : 
         ti = kwargs['ti']
-        company_list = ti.xcom_pull( task_ids="etl_mabna_get_companies_req")
-        logger.info(f"Len of Input data (Companies) : {len(company_list)}")
+        category_list = ti.xcom_pull( task_ids="etl_mabna_get_categories_req")
+        logger.info(f"Len of Input data (Ins Groups) : {len(category_list)}")
         logger.info("^-"*25)
-        logger.info(f"First Entry : {company_list[0]}")
-        logger.info(f"Last Entry : {company_list[-1]}")
-        logger.info("^-"*25)
-        schema_config = {"url" : f"{SCHEMA_REGISTRY_URL}" }
-        logger.info(f"Schema Config : {schema_config}")
+        logger.info(f"First Entry : {category_list[0]}")
+        logger.info(f"Last Entry : {category_list[-1]}")
         logger.info("^-"*25)
 
-        client= CachedSchemaRegistryClient(schema_config)    
-        schema_id, schema, version = client.get_latest_schema(f"{SUBJECT}")
-        if schema_id is None : 
-            raise KafkaSchemaNotFound("Kafka Schema Not Found",SUBJECT)
-        logger.info(f"Schema ID: {schema_id}, Schema : {schema}, Version : {version}")
-        logger.info("*-"*25)
-        i =1
-        avroProducer = AvroProducer({
-                'bootstrap.servers': f'{BOOTSTRAP_SERVERS}',
-                'on_delivery': delivery_report,
-                'schema.registry.url': f'{SCHEMA_REGISTRY_URL}'
-                },
-                default_value_schema=schema, default_key_schema=key_schema)
-        com_cnt = 1
-        for company in company_list : 
+        rows_count = 1
+        for category in category_list : 
             try :
-                logger.info(f"# {com_cnt:5} : {company['short_name']}")
-                com_cnt +=1
-                avroProducer.produce(topic=f'{TOPIC}', value=company, key = {'id' : company['id']})
+                logger.info(f"# {rows_count:5} : {category.get('name','No Name Provided!')}")
                 # logger.info(i)
-                i+=1
-                if (i%10==0) :
-                    avroProducer.flush()
+
+                pg_hook = PostgresHook(postgres_conn_id='postgres_lookups')
+                category_insert = """INSERT INTO lookups.categories(id, code, name, short_name, parent)
+                VALUES(%s, %s,  %s, %s, %s);"""
+
+                category_update = """UPDATE lookups.categories 
+                    SET code=%s, name=%s, short_name=%s, parent=%s WHERE id=%s;"""
+
+                rows_count+=1
+                logger.info(f"Row # {rows_count} is processing ... ")
+                if category.get("meta").get("state") == "deleted" :
+                    logger.info(f"Deleted Record Encountered! - ID : {category.get('id')} ")
+                else :     
+                    ckeck_row_existed = f"select * from lookups.categories where id = {category.get('id')} "
+                    connection = pg_hook.get_conn()
+                    nt_cur = connection.cursor()
+                    nt_cur.execute(ckeck_row_existed)
+                    result = nt_cur.fetchone()
+                    # logger.info(f"Query Issued  : {ckeck_row_existed}")
+                    if result != None :
+                        
+                        logger.info("Updating ... ")
+                        pg_hook.run(category_update, parameters=(category.get("code",""),
+                                                    category.get("name",None),
+                                                    category.get("short_name",None),
+                                                    category.get("parent").get("id") if category.get("parent") else None,
+                                                    category.get("id")
+                                                    ))
+                    else : 
+                        pg_hook.run(category_insert, parameters=(category.get("id"),
+                                                    category.get("code",""),
+                                                    category.get("name", None),
+                                                    category.get("short_name", None),
+                                                    category.get("parent").get("id") if category.get("parent") else None,
+                                                    ))
+                    
             except Exception as err : 
                 clientAPM.capture_exception()
-                logger.error(err)
-                logger.error(f"Company Data :{company}")
-                # clientAPM.capture_message("Company Info Errors")
-                errors+=1
+                logger.error(f"Exeption : {err}")
+                raise err
 
-        avroProducer.flush()
-        logger.info("%_"*25)
-        logger.info(f"Number of Errors : {errors}")
-        logger.info(f"Number of Records : {len(company_list)}")
-        logger.info(f"Number of Inserted Records : {len(company_list) - errors}")
-        logger.info("%_"*25)
-        return True
-    except Exception as e:
-        logger.error("Exception: " + str(e))
+        logger.info(f"Category List - Len : {len(category_list)}")
+        select_rows_affected = """select count(*) as cnt from lookups.categories where updated_at > now() - interval '1 hour';"""
+        rows_affected = pg_hook.get_first(select_rows_affected)[0]
+        logger.info(f"Rows Inserted/Updated : {rows_affected}")
+    except Exception as ex : 
         clientAPM.capture_exception()
-        raise e
+        logger.error(f"Exeption : {ex}")
+        raise ex
 
 ##----------------------------- Functions Ends Here---------------------------
 
@@ -191,7 +177,7 @@ default_args = {
     # 'trigger_rule': 'all_success'
 }
 with DAG(
-    'ETL-Mabna-Companies-2-Kafka',
+    'ETL-Direct-Mabna-Categories-2-PG',
     default_args=default_args,
     description='A simple HttpRequest DAG',
     schedule_interval=timedelta(days=30),
@@ -200,22 +186,16 @@ with DAG(
 ) as dag:
 
     task_get_request = PythonOperator(
-        task_id='etl_mabna_get_companies_req',
-        python_callable=get_companies,
+        task_id='etl_mabna_get_categories_req',
+        python_callable=get_inst_groups,
         dag=dag,
     )
 
 
     task_save_results = PythonOperator(
-        task_id='etl_mabna_companies_to_kafka',
-        python_callable=produce_companies,
+        task_id='etl_mabna_categories_2_pg',
+        python_callable=save_2_pg,
         dag=dag,
     )
 
-    task_trigger_processing = TriggerDagRunOperator( 
-        task_id='etl_maba_companies_trigger_Kafka_2_PG',
-        trigger_dag_id='ETL-Mabna-Companies-2-PG',
-        conf={"message": "Hello World"},
-    )
-
-    task_get_request >> task_save_results >> task_trigger_processing
+    task_get_request >> task_save_results 

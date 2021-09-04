@@ -12,6 +12,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     networks:
       - services
+    restart: always
 
   broker:
     image: confluentinc/cp-kafka:${CP_VERSION}
@@ -42,6 +43,7 @@ services:
       CONFLUENT_SUPPORT_CUSTOMER_ID: 'anonymous'
     networks:
       - services
+    restart: always
 
   schema-registry:
     image: confluentinc/cp-schema-registry:${CP_VERSION}
@@ -57,6 +59,7 @@ services:
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
     networks:
       - services
+    restart: always
 
   # connect:
   #   image: cnfldemos/cp-server-connect-datagen:0.5.0-${CP_VERSION}
@@ -185,6 +188,7 @@ services:
       KAFKA_REST_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
     networks:
       - services
+    restart: always
 
   kafkaHQ:
     image: tchiotludo/akhq
@@ -209,6 +213,7 @@ services:
        #     url: "http://connect:8083"
     networks:
       - services
+    restart: always
 
 networks: 
   services:
