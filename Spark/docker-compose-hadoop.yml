@@ -8,6 +8,41 @@ version: "3.3"
 #################################
 
 services:
+
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    restart: always
+    ports:
+      - 9870:9870
+      - 9000:9000
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+      - ./data/hadoop:/data
+    environment:
+      - CLUSTER_NAME=test
+    env_file:
+      - ./hadoop.env
+    networks:
+        - services
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    restart: always
+    hostname:
+      datanode
+    ports:
+      - 9864:9864
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    environment:
+      SERVICE_PRECONDITION: "namenode:9870"
+    env_file:
+      - ./hadoop.env
+    networks:
+        - services
+
   spark-master:
     image: nikamooz/spark:3.1.2
     build: ./build/spark
@@ -23,11 +58,13 @@ services:
       - SPARK_LOCAL_IP=spark-master
       - SPARK_WORKLOAD=master
       - SPARK_LOCAL_HOSTNAME=spark-master
-      - CORE_CONF_fs_defaultFS=hdfs://hadoop:8020
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
     # extra_hosts:
     #   - "spark-master:0.0.0.0"
     networks:
         - services
+    env_file:
+        - ./hadoop.env
 
   spark-worker1:
     image: nikamooz/spark:3.1.2
@@ -48,7 +85,7 @@ services:
       - SPARK_WORKLOAD=worker
       - SPARK_LOCAL_IP=spark-worker1
       - SPARK_LOCAL_HOSTNAME=spark-worker1
-      - CORE_CONF_fs_defaultFS=hdfs://hadoop:8020
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
     # extra_hosts:
     #   - "spark-worker1:0.0.0.0"
     volumes:
@@ -56,6 +93,8 @@ services:
        - ./data/data:/opt/spark-data
     networks:
        - services
+    env_file:
+        - ./hadoop.env
 
   spark-worker2:
     image: nikamooz/spark:3.1.2
@@ -76,7 +115,7 @@ services:
       - SPARK_WORKLOAD=worker
       - SPARK_LOCAL_IP=spark-worker2
       - SPARK_LOCAL_HOSTNAME=spark-worker2
-      - CORE_CONF_fs_defaultFS=hdfs://hadoop:8020
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
     # extra_hosts:
     #   - "spark-worker2:0.0.0.0"
     volumes:
@@ -84,6 +123,8 @@ services:
         - ./data/data:/opt/spark-data
     networks:
         - services
+    env_file:
+        - ./hadoop.env
 
   pyspark:
     image: nikamooz/pyspark:3.1.2
@@ -107,9 +148,12 @@ services:
         - spark-master  
     networks:
         - services
+    env_file:
+        - ./hadoop.env
   
 networks: 
   services:
     name: ${APP_NAME}_network
 volumes:
-  dfs_data: {}
+  hadoop_namenode: {}
+  hadoop_datanode: {}

@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+  hadoop:
+    container_name: ${CONTAINER_NAME:-hadoop}
+    hostname: ${CONTAINER_NAME:-hadoop}
+    image: nikammoz/hadoop:3.3.1
+    build: ./hadoop
+    ports:
+        - 50070:50070
+        - 50075:50075
+        - 8088:8088
+        - 8188:8188
+        - 9000:9000
+        - 9870:9870
+    networks:
+      - services
+    volumes:
+      - dfs_data2:/home/hduser/dfs/data
+
+volumes:
+  dfs_data2: {}
+  
+networks: 
+  services:
+    name: ${APP_NAME}_network

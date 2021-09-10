@@ -3,7 +3,10 @@ dags_saba/
 .env
 Local_Services/
 db_sabatamin/
-
+.ipynb_checkpoints/
+.Trash-0/
+.Trash-1/
+.Trash-2/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
