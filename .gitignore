@@ -1,5 +1,6 @@
 *.tar.gz
 dags_saba/
+db_data/
 .env
 Local_Services/
 db_sabatamin/
