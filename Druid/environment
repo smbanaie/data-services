@@ -26,7 +26,7 @@ DRUID_MAXDIRECTMEMORYSIZE=6172m
 
 druid_emitter_logging_logLevel=debug
 
-druid_extensions_loadList=["druid-kafka-indexing-service", "druid-histogram", "druid-datasketches", "druid-lookups-cached-global", "postgresql-metadata-storage"]
+druid_extensions_loadList=["druid-s3-extensions","druid-kafka-indexing-service", "druid-histogram", "druid-datasketches", "druid-lookups-cached-global", "postgresql-metadata-storage"]
 
 
 #druid.host=#{IP_ADDR}:8080
@@ -39,7 +39,7 @@ druid_extensions_loadList=["druid-kafka-indexing-service", "druid-histogram", "d
 #druid.router.http.numConnections=50
 #druid.router.http.readTimeout=PT5M
 
-druid_zk_service_host=zookeeper
+druid_zk_service_host=zookeeper_druid
 
 druid_metadata_storage_host=
 druid_metadata_storage_type=postgresql
@@ -48,7 +48,7 @@ druid_metadata_storage_connector_user=druid
 druid_metadata_storage_connector_password=druid
 
 druid_lookup_lookupTierIsDatasource=false
-druid_lookup_lookupTier=saba_daily
+#druid_lookup_lookupTier=saba_daily
 
 druid_router_management_proxy_enabled=true
 
@@ -59,8 +59,24 @@ druid_coordinator_balancer_strategy=cachingCost
 druid_indexer_runner_javaOptsArray=["-server", "-Xmx1g", "-Xms1g", "-XX:MaxDirectMemorySize=3g", "-Duser.timezone=UTC", "-Dfile.encoding=UTF-8", "-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager"]
 druid_indexer_fork_property_druid_processing_buffer_sizeBytes=256MiB
 
-druid_storage_type=local
-druid_storage_storageDirectory=/opt/shared/segments
+
+
+
+### Deep Storage
+
+s3service_s3Endpoint=localhost
+s3service_s3EndpointHttpPort=9000
+s3service_disableDnsBuckets=true
+s3service_httpsOnly=false
+
+druid_storage_type=s3
+druid_storage_bucket=test
+druid_storage_baseKey=druid/segments
+druid_s3_accessKey=minio
+druid_s3_secretKey=minio123
+
+#druid_storage_type=local
+#druid_storage_storageDirectory=/opt/shared/segments
 druid_indexer_logs_type=file
 druid_indexer_logs_directory=/opt/shared/indexing-logs
 

@@ -46,7 +46,8 @@ services:
 
   # Need 3.5 or later for container nodes
   zookeeper:
-    container_name: zookeeper
+    container_name: zookeeper_druid
+    hostname: zookeeper_druid
     image: zookeeper:3.5
     environment:
       - ZOO_MY_ID=1
